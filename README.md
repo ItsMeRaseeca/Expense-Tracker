@@ -24,6 +24,8 @@ This **Expense Tracker** is designed to help users record, analyze, and visualiz
    - Calculates **mean, median, and mode** to provide spending insights.  
 
 
+
+
 ![image](https://github.com/user-attachments/assets/5cdaea60-96fd-43c9-b8d9-259ed6811953)
 
 
