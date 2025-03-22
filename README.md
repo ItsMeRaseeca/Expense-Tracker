@@ -3,26 +3,20 @@
 This **Expense Tracker** is designed to help users record, analyze, and visualize their expenses efficiently. The app allows users to enter item details, calculate total costs, and generate statistical insights such as **mean, median, and mode**. It also provides a **bar chart visualization** for better financial tracking.  
 
 
-### 1. **Python**  
-   - The core programming language used for developing this project.  
-   - Handles logic for adding, clearing, and analyzing expenses.  
+### Python  
+Python serves as the core programming language for this project. It is responsible for handling the logic behind adding, clearing, and analyzing expenses, as well as managing the integration of various libraries used for data manipulation, visualization, and GUI creation.  
 
-### 2. **Tkinter**  
-   - Provides the **Graphical User Interface (GUI)** for the application.  
-   - Manages user input fields, buttons, labels, and layout structure.  
+### Tkinter  
+Tkinter is used to build the graphical user interface (GUI) of the application. It provides interactive elements such as input fields, buttons, and labels, allowing users to input expense details and view results in an organized layout. The framework ensures a smooth user experience while interacting with the application.  
 
-### 3. **Pandas**  
-   - Used for organizing and processing **expense data**.  
-   - Converts the list of expenses into a **DataFrame** for analysis.  
+### Pandas  
+Pandas is utilized for efficient data handling and processing. It structures the entered expense details into a DataFrame, enabling organized storage and manipulation of data. This allows for easier statistical calculations and analysis of expenses.  
 
-### 4. **Matplotlib**  
-   - Generates a **bar chart** to visually represent expenses.  
-   - Helps users track spending patterns effectively.  
+### Matplotlib  
+Matplotlib is responsible for generating visual representations of the recorded expenses. The application uses it to create a bar chart that helps users identify spending patterns at a glance. By displaying the total cost of each item visually, it enhances financial tracking and decision-making.  
 
-### 5. **SciPy (scipy.stats)**  
-   - Performs **statistical analysis** on expenses.  
-   - Calculates **mean, median, and mode** to provide spending insights.  
-
+### SciPy (scipy.stats)  
+SciPy is used for statistical analysis of expenses. The `scipy.stats` module calculates key financial insights such as mean, median, and mode, giving users a better understanding of their spending habits. This analysis helps in identifying common expense trends and outliers.  
 
 
 
