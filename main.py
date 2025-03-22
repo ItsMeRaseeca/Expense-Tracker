@@ -1,6 +1,7 @@
 import tkinter as tk
 import pandas as pd
 from matplotlib import pyplot as plt
+import scipy.stats as stats
 
 root=tk.Tk()
 root.geometry("1000x750")
@@ -26,15 +27,26 @@ def clr_item():
 
 def analyse():
     df=pd.DataFrame(item_list)
-    items=df['Item']
-    total=df['Total Amount']
-    fig=plt.figure(figsize=(10,5))
-    plt.bar(items, total, color='#081A40', width=0.4)
-    plt.xlabel("Items Puchased")
-    plt.ylabel("Cost of Items")
-    plt.title("Expense Tracker Analysis")
-    plt.show()
 
+    if not df.empty:
+        mean_cost = df['Total Amount'].mean()
+        median_cost = df['Total Amount'].median()
+        mode_cost = stats.mode(df['Total Amount'], keepdims=True).mode[0] # Get mode
+
+        # Print statistical results
+        stats_lbl = tk.Label(root, text=f"Mean: {mean_cost:.2f} | Median: {median_cost:.2f} | Mode: {mode_cost}", bg="#081A40", fg="#ffffff", font=("Segoe UI", 15))
+        stats_lbl.pack(pady=5)
+
+        items=df['Item']
+        total=df['Total Amount']
+        fig=plt.figure(figsize=(10,5))
+        plt.bar(items, total, color='#081A40', width=0.4)
+        plt.xlabel("Items Puchased")
+        plt.ylabel("Cost of Items")
+        plt.title("Expense Tracker Analysis")
+        plt.show()
+    else:
+        print("No expenses to analyze.")
 
 #Item
 title_lbl=tk.Label(root, text="Expense Tracker", bg="#081A40", fg="#ffffff", font=("Segoe UI Semibold", 20))
