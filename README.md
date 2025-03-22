@@ -1,4 +1,3 @@
-# Expense-Tracker
 # Expense Tracker App  
 
 This **Expense Tracker** is designed to help users record, analyze, and visualize their expenses efficiently. The app allows users to enter item details, calculate total costs, and generate statistical insights such as **mean, median, and mode**. It also provides a **bar chart visualization** for better financial tracking.  
